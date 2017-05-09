@@ -2,6 +2,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
 
+/*@author-Sarbajit*/
+
 public class TimeDefinedInput {
 	private static String inputStr = "";
 
@@ -16,8 +18,7 @@ public class TimeDefinedInput {
 
 	public void getInput() throws Exception {
 		Timer timer = new Timer();
-		timer.schedule(task, 5000);
-
+		timer.schedule(task, 5000);//5 second limit
 		System.out.println("Input within 5 seconds");
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		inputStr = in.readLine();
